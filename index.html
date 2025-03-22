@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Strategy Study</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Phase 1: Learn -->
+        <div id="learn-phase" class="phase">
+            <h2>Phase 1: Learn</h2>
+            <div class="instructions">
+                <p>In this phase, you will see 4 cards about brain areas and their functions. Each will be shown for 5 seconds.</p>
+                <p>Please try to remember this information, paying attention to both the questions and answers.</p>
+            </div>
+            <button id="start-learn" class="btn">Start Learning Phase</button>
+            <div id="learn-cards" class="cards-container"></div>
+        </div>
+
+        <!-- Phase 2: Study -->
+        <div id="study-phase" class="phase hidden">
+            <h2>Phase 2: Study</h2>
+            <div class="instructions">
+                <p>In this phase, you will study the cards using two different strategies:</p>
+                <ul>
+                    <li><strong>Review Strategy:</strong> Both question and answer are visible. Type your answer in the text box.</li>
+                    <li><strong>Generate Strategy:</strong> Only the question is visible for 4 seconds. Then the answer appears. Type your answer in the text box.</li>
+                </ul>
+            </div>
+            <button id="start-study" class="btn">Start Study Phase</button>
+            <div id="study-cards" class="cards-container"></div>
+        </div>
+
+        <!-- Logs Section -->
+        <div id="logs-section" class="phase hidden">
+            <h2>Study Complete!</h2>
+            <p>Thank you for participating in the study. You can now copy your study logs below.</p>
+            <button id="copy-logs" class="btn">Copy Logs</button>
+            <textarea id="logs-display" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
