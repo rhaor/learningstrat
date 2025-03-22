@@ -172,6 +172,9 @@ function showStudyCard(index, strategy) {
     // Add event listeners for the new card
     const submitBtn = studyCards.querySelector('.submit-btn');
     const textarea = studyCards.querySelector('textarea');
+        
+    // Focus the textarea
+    textarea.focus();
     
     submitBtn.addEventListener('click', () => handleSubmit(index));
     textarea.addEventListener('keypress', (e) => {
